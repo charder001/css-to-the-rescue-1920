@@ -13,11 +13,13 @@ main {
   overflow: hidden;
 }
 
-#content {
-  transition: 5s ease-out;
+main > section {
+  transition: 5s ease-in;
+  margin: 1em;
 }
 
-#hoverhere:hover~#content {
+
+main > div:first-child:hover ~ section {
   transform: translate(0em, -40em);
   transition: 5s ease-in;
 }
@@ -53,16 +55,16 @@ main {
   margin-top: -500px;
 }
 
-#hoverhere {
+main > div:first-child {
   position: absolute;
   z-index: 10;
   margin-left: 9.3em;
-  margin-top: -29em;
+  margin-top: -28em;
   opacity: 0%;
   cursor: auto;
 }
 
-#hoverhere:hover {
+main > div:first-child:hover {
   opacity: 100%;
 }
 
@@ -76,7 +78,8 @@ main {
   }
 }
 
-/* ------------------------------------------- */
+
+/* ------------------------SHAPES------------------------- */
 
 #trapezoid {
   border-top: 250px solid #f4ebce;
