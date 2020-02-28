@@ -9,7 +9,7 @@ You might notice the fact that your cursor changes to a plane when hovered over 
 ## What have i learned?
 Before this course my only experience with CSS has been to style a few websites using fonts, colors, flexbox etc. The amazing thing about this assignment has been that we had a lot of creativity, and were encourage to try crazy things that would not fit into more conventional website designs. So, during the course i've stumbled into and learned from the following things:
 
-- CSS Keyframing animations
+- ### CSS Keyframing animations
 I had never worked with these before, but after getting to know them i've learned how versatile they are and how many different applications these animations can have. There is definitely more cool stuff to explore with keyframed animations!
 
 - repeat-x
