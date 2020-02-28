@@ -15,7 +15,7 @@ main {
 
 main > section {
   transition: 5s ease-in;
-  margin: 1em;
+
 }
 
 .container {
@@ -30,12 +30,12 @@ main > section {
 
 /* ----HOVER trigger text movement---- */
 
-.planehover:hover ~ section {
-  transform: translateY(-40em);
+main > div:hover ~ section {
+  transform: translateY(-60em);
   transition: 3s ease-in;
 }
 
-main > .planehover {
+main > div {
   position: absolute;
   z-index: 10;
   margin-left: 9.3em;
@@ -44,7 +44,7 @@ main > .planehover {
   cursor: auto;
 }
 
-main > .planehover:hover {
+main > div:hover {
   opacity: 100%;
 }
 
@@ -58,23 +58,25 @@ main > .planehover:hover {
   cursor: url(../img/planecursor.png) 50 50, auto;
 }
 
-.sliding-background {
+div[id="sliding-background"] {
   height: 560px;
   width: 5076px;
   animation: slide 60s linear infinite;
   /* background-color: #4fc0be; */
   background: linear-gradient(177deg, #1a0e66, #ed8d5b, #4fc0be);
   background-size: 600% 600%;
-  animation: AnimationName 59s ease infinite;
+  animation: gradient 59s ease infinite;
 }
 
-@keyframes AnimationName {
+
+/* Background gradient animation */
+@keyframes gradient {
   0%{background-position:46% 0%}
   50%{background-position:55% 100%}
   100%{background-position:46% 0%}
 }
 
-.clouds {
+div[id="clouds"] {
   background: url("../img/v2/clouds.png") repeat-x;
   height: 560px;
   width: 5076px;
@@ -82,7 +84,7 @@ main > .planehover:hover {
   margin-top: -560px;
 }
 
-.sliding-foreground {
+div[id="sliding-foreground"] {
   background: url("../img/v2/fg.png") repeat-x;
   height: 560px;
   width: 5076px;
@@ -154,6 +156,9 @@ div[id="trapezoid4"] {
   transform: rotate(27deg);
 }
 
+
+
+/* ----Shake animation---- */
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
