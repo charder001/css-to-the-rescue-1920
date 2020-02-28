@@ -22,7 +22,7 @@ Another new one for me, which was surprisingly easy to implement. I wasn't sure 
 Also new to me, i wanted to include a day-night cycle into my concept. The prettiest and most elegant solution to me would be to add a CSS gradient to my background, which is exactly what i did. There are lots of amazing tools online to help you with creating the exact gradient you want (i used https://www.gradient-animator.com/ which worked amazingly).
 
 ## What else would i like to add
-- Shake entire page
+- ### Shake entire page
 I tried almost an entire day (oops) trying to make the whole page move instead of just the ladscape. This turned out really hard because of the lack of parent selector in css. I tried many ways to structure my html and css but in the end i settled for the solution i have now. I would really like to add this though, as i think it would fit my concept really well.
 
 - ### Make chopsticks move
